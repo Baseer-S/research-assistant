@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🧠 Research Assistant</h2>
+        </div>
+
+        <div class="actions">
+            <button data-op="summarize">Summarize</button>
+            <button data-op="suggest">Suggest Topics</button>
+            <button data-op="explain">Explain</button>
+            <button data-op="rewrite">Rewrite</button>
+            <button data-op="translate">Translate Tamil</button>
+        </div>
+        
+
+        <div class="notes">
+            <h3>📝 Research Notes</h3>
+            <textarea id="notes" placeholder="Take notes here..."></textarea>
+            <div class="note-buttons">
+                <button id="saveNotesBtn">📂 Save Notes</button>
+                <button id="exportBtn">⬇️ Export .txt</button>
+            </div>
+        </div>
+
+        <div id="results"></div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
